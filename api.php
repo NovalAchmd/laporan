@@ -71,3 +71,4 @@ Route::delete('/deletetable-Kelas/{id_kls}', [KelasController::class, 'deletetab
 
 //laporan
 Route::get("/laporanmhs", [MahasiswaController::class , 'LaporanMhs']);
+Route::get("/laporanmhsdosen", [MahasiswaController::class, 'LaporanMhsdosen']);

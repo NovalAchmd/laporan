@@ -21,5 +21,10 @@ class Mahasiswa extends Model
     {
         return $this->hasOne(Kompen_mhs::class, 'id_mhs', 'id_mhs');
     }
+
+    public function kelas()
+    {
+    return $this->belongsTo(Kelas::class, 'id_kls', 'id_kls');
+    }
 }
 
